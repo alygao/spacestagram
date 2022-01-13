@@ -1,0 +1,23 @@
+.LikeButton {
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 10px;
+    width:calc(25px + 2vmin);
+    height:calc(25px + 2vmin);
+    cursor: pointer;
+    margin-right: 2vmin;
+    margin-top: 1vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LikeButton:hover {
+    transform: scale(1.05);
+    background-color: #E7E7E7;
+}
+
+.LikeButton-image {
+    width:calc(15px + 2vmin);
+    height:calc(15px + 2vmin);
+}
