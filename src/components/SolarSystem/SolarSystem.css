@@ -1,0 +1,44 @@
+.SolarSystem {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.SolarSystem-pluto {
+    position: absolute;
+    margin-top: -15%;
+    z-index: 4;
+    animation:SolarSystem-spin infinite 30s linear;
+}
+
+.SolarSystem-earth {
+    position: absolute;
+    z-index: 3;
+    animation:SolarSystem-spin infinite 15s linear;
+}
+
+.SolarSystem-sun {
+    position: absolute;
+    z-index: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .SolarSystem-image {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@keyframes SolarSystem-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
