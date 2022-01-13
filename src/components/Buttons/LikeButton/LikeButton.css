@@ -13,8 +13,10 @@
 }
 
 .LikeButton:hover {
-    transform: scale(1.05);
-    background-color: #E7E7E7;
+    -webkit-animation: none;
+    -webkit-transform: scale(1.2);
+    animation: none;
+    transform: scale(1.2);
 }
 
 .LikeButton-image {

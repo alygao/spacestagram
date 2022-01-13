@@ -14,8 +14,10 @@
 }
 
 .SaveButton:hover {
-    transform: scale(1.1);
-    background-color: #E7E7E7;
+    -webkit-animation: none;
+    -webkit-transform: scale(1.2);
+    animation: none;
+    transform: scale(1.2);
 }
 
 .SaveButton-image {

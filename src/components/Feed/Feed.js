@@ -7,11 +7,12 @@ import Loader from '../Loader/Loader';
 function Feed() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [endDate, setEndDate] = useState(new Date());
+    // const [endDate, setEndDate] = useState(new Date());
 
     useEffect(() => {
         const fetchData = async () => {
-            let startDate = new Date(endDate);;
+            let endDate = new Date();
+            let startDate = new Date(endDate);
             startDate = new Date(startDate.setDate(endDate.getDate() - 14))
             setLoading(true);
             const data = await fetchDataFromDateRange(startDate, endDate);
@@ -19,7 +20,7 @@ function Feed() {
             setData(data.reverse());
         };
         fetchData();
-    }, [endDate]);
+    }, []);
 
 
     return (

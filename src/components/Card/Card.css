@@ -87,6 +87,8 @@
 }
 
 .Card-showdetails:hover{
+    -webkit-animation: none;
+    -webkit-transform: scale(1.1);
+    animation: none;
     transform: scale(1.1);
-    background-color: #E7E7E7;
 }

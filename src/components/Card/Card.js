@@ -1,6 +1,5 @@
 import './Card.css';
 import { useState } from "react";
-import mock from '../../images/mock.png'
 import LikeButton from '../Buttons/LikeButton/LikeButton';
 import SaveButton from '../Buttons/SaveButton/SaveButton';
 
@@ -15,8 +14,8 @@ function Card({cardData}) {
   return (
     <div className="Card">
       {cardData.media_type ==='image' 
-      ? <img src={cardData.url} className="Card-image" alt="card-image"/> 
-      : <iframe className="Card-image" alt="card-video"
+      ? <img src={cardData.url} className="Card-image" alt="card-media"/> 
+      : <iframe title={cardData.title} className="Card-image" alt="card-media"
         src={cardData.url}>
         </iframe>
       }

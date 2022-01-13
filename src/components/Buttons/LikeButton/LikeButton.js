@@ -6,7 +6,7 @@ import likedIcon from '../../../images/liked.png'
 
 function LikeButton({cardData}) {
     const savedInStorage = localStorage.getItem(cardData.date) ?? null;
-    const initialLikedValue = savedInStorage == 'liked';
+    const initialLikedValue = savedInStorage === 'liked';
     const [liked, setLiked] = useState(initialLikedValue);
 
     const handleLikeButton = () => {
@@ -17,7 +17,7 @@ function LikeButton({cardData}) {
     }
     return (
         <div className="LikeButton" onClick={handleLikeButton}>
-            <img src={!liked ? unlikedIcon : likedIcon}  className="LikeButton-image" alt="unliked"/>
+            <img src={!liked ? unlikedIcon : likedIcon}  className="LikeButton-image" alt="like/unlike-icon"/>
         </div>
     );
 }

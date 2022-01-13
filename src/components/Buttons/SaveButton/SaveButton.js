@@ -1,5 +1,4 @@
 import './SaveButton.css';
-import { useState } from "react";
 import save from '../../../images/save.png'
 
 
@@ -13,7 +12,7 @@ function SaveButton({cardData}) {
   
   return (
     <div className="SaveButton" onClick={handleSaveButton}>
-        <img src={save} className="SaveButton-image" alt="save-image"/>
+        <img src={save} className="SaveButton-image" alt="save-icon"/>
     </div>
   );
 }
