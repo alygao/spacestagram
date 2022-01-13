@@ -1,0 +1,92 @@
+.Card {
+    transition: 0.3s;
+    background-color: #18171E;
+    border: 2px solid white;
+    border-radius: 10px;
+    max-width:80vw;
+    width:calc(500px + 2vmin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3vmin;
+    padding:3vmin;
+}
+
+.Card:hover {
+    transition: 0.3s;
+    -webkit-box-shadow:0 0 20px rgb(255, 255, 255); 
+    -moz-box-shadow: 0 0 20px rgb(255, 255, 255); 
+    box-shadow:0 0 20px rgb(255, 255, 255);
+}
+
+.Card-image {
+    max-width:75vw;
+    max-height:75vw;
+    width:calc(475px + 2vmin);
+    height:calc(475px + 2vmin);
+    border: 2px solid white;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.Card-info {
+    max-width:75vw;
+    width:calc(475px + 2vmin);
+    text-align: left;
+    margin: 2vmax;
+}
+
+.Card-title{
+    font-size: calc(15px + 1vmin);
+    margin: 0;
+    padding:0;
+}
+
+.Card-date{
+    font-style: italic;
+    color: #E7E7E7;
+    font-size: calc(8px + 1vmin);
+    margin: 0;
+    padding:0;
+}
+
+.Card-details {
+    font-size: calc(8px + 1vmin);
+    color: #E7E7E7;
+}
+
+.Card-buttons {
+    max-width:75vw;
+    width:calc(475px + 2vmin);
+    height:calc(30px + 2vmin);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Card-leftbuttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.Card-showdetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin-top: 1vmin;
+    border-radius: 10px;
+    font-size: calc(5px + 1vmin);
+    font-weight: bold;
+    height:calc(25px + 2vmin);
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 1vmin;
+}
+
+.Card-showdetails:hover{
+    transform: scale(1.1);
+    background-color: #E7E7E7;
+}
