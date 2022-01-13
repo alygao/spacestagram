@@ -1,5 +1,6 @@
 # Spacetagram 🌌
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/48ea99f6-2a2b-48e6-ae1e-e842d1fc5ebd/deploy-status)](https://app.netlify.com/sites/alyssa-gao-spacetagram/deploys)
 
 This is a single page application that retrieves the most recent 14 Astronomy Pictures of the Day (APOD) from the [NASA API](https://api.nasa.gov/) and showcases them like a social media feed.
 
