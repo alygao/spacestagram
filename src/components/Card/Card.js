@@ -13,8 +13,8 @@ function Card({cardData}) {
   return (
     <div className="Card">
       {cardData.media_type ==='image' 
-      ? <img src={cardData.url} className="Card-image" alt="card-media"/> 
-      : <iframe title={cardData.title} className="Card-image" alt="card-media"
+      ? <img src={cardData.url} className="Card-image" alt="The Astronomy Picture of the Day"/> 
+      : <iframe title={cardData.title} className="Card-image" alt="The Astronomy Video of the Day"
         src={cardData.url}>
         </iframe>
       }
@@ -23,12 +23,12 @@ function Card({cardData}) {
           <LikeButton cardData={cardData}/>
           <SaveButton cardData={cardData}/>
         </div>
-        <div className="Card-showdetails" onClick={handleDetailsButton}>
+        <div className="Card-showdetails" onClick={handleDetailsButton} role="button">
           {!showDetails ? "Show Details" : "Hide Details"}
         </div>
       </div>
       <div className="Card-info">
-        <h4 className="Card-title">{cardData.title}</h4>
+        <p className="Card-title">{cardData.title}</p>
         <p className="Card-date">{cardData.date}</p>
         {showDetails && 
           <p className="Card-details">

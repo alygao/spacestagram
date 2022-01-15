@@ -11,8 +11,8 @@ function SaveButton({cardData}) {
   }
   
   return (
-    <div className="SaveButton" onClick={handleSaveButton}>
-        <img src={save} className="SaveButton-image" alt="save-icon"/>
+    <div className="SaveButton" onClick={handleSaveButton} role="button">
+        <img src={save} className="SaveButton-image" alt="save icon"/>
     </div>
   );
 }
