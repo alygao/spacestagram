@@ -1,25 +1,22 @@
 import './Feed.css';
 import { useState, useEffect} from "react";
 import Card from '../Card/Card';
-import fetchDataFromDateRange from '../fetchDataFromDateRange';
+import fetchData from '../fetchData';
 import Loader from '../Loader/Loader';
 
 function Feed() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
-    // const [endDate, setEndDate] = useState(new Date());
 
     useEffect(() => {
-        const fetchData = async () => {
-            let endDate = new Date();
-            let startDate = new Date(endDate);
-            startDate = new Date(startDate.setDate(endDate.getDate() - 14))
+        const fetch = async () => {
             setLoading(true);
-            const data = await fetchDataFromDateRange(startDate, endDate);
+            const data = await fetchData();
+            console.log(data);
             setLoading(false);
             setData(data.reverse());
         };
-        fetchData();
+        fetch();
     }, []);
 
 
