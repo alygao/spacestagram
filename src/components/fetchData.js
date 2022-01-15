@@ -16,17 +16,6 @@ export default async function fetchData() {
   const dayEnd = String(endDate.getDate()).padStart(2, "0");
   const endDateFormatted = yearEnd + "-" + monthEnd + "-" + dayEnd;
 
-  console.log(startDate, endDate);
-  console.log(startDateFormatted, endDateFormatted);
-
-  // const apiData = () => {
-  //   return axios.get(`https://api.nasa.gov/planetary/apod?api_key=O7AHXLq890QyH9ZpqjSkcsbtrfoq0FPkYbWuFTkM&start_date=${startDateFormatted}&end_date=${endDateFormatted}`)
-  //     .then((response) => response.json()
-  //     .then((fetchData) => {
-  //           return fetchData;
-  //     }));
-  // }
-
   const apiData = fetch(
     `https://api.nasa.gov/planetary/apod?api_key=O7AHXLq890QyH9ZpqjSkcsbtrfoq0FPkYbWuFTkM&start_date=${startDateFormatted}&end_date=${endDateFormatted}`
   )

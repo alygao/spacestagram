@@ -12,7 +12,6 @@ function Feed() {
         const fetch = async () => {
             setLoading(true);
             const data = await fetchData();
-            console.log(data);
             setLoading(false);
             setData(data.reverse());
         };

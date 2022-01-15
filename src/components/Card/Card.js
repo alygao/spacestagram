@@ -3,7 +3,6 @@ import { useState } from "react";
 import LikeButton from '../Buttons/LikeButton/LikeButton';
 import SaveButton from '../Buttons/SaveButton/SaveButton';
 
-
 function Card({cardData}) {
   const [showDetails, setShowDetails] = useState(false);
 
