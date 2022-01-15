@@ -4,7 +4,7 @@
 
 This is a single page application that retrieves the most recent 14 Astronomy Pictures of the Day (APOD) from the [NASA API](https://api.nasa.gov/) and showcases them like a social media feed.
 
-This is my submission for the Summer 2022 Shopify Front End Developer Intern Challenge.
+This is my submission for the Summer 2022 Shopify Front End Developer Intern Challenge: https://alyssa-gao-spacetagram.netlify.app/
 
 ## Basic Functions
 Please see [here](https://docs.google.com/document/d/13zXpyrC2yGxoLXKktxw2VJG2Jw8SdUfliLM-bYQLjqE/edit#) for the detailed requirements.
@@ -15,15 +15,24 @@ Please see [here](https://docs.google.com/document/d/13zXpyrC2yGxoLXKktxw2VJG2Jw
 ## Additional Features
 ### Save likes if the user leaves or reloads the page (using local storage)
 Using `localStorage`, likes will be saved/updated until the browser cache/cookies are cleared.
+<img src="screenshots/local_storage.gif" width="600">
 
 ### Animate the “like” action
 The user can interact with the like button to like/unlike an image.
 
+<img src="screenshots/like_unlike.gif" width="300">
+
 ### Add a loading state while we wait for NASA’s API to return data
 Initially, when the page loads, a yellow loader is shown until the data is retrieved from the API.
+<img src="screenshots/loading.gif" width="600">
 
 ### Create shareable links for each image
 When the user clicks on the share/save button, a popup will alert that the browser will open a new tab with the image and shareable url.
+<img src="screenshots/share.gif" width="600">
+
+### Responsive Design
+The page renders well on a variety of devices and window or screen sizes. 
+<img src="screenshots/responsive.gif" width="600">
 
 ## Tech Stack
 This application was created with React.
