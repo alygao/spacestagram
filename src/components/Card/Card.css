@@ -34,7 +34,7 @@
     max-width:75vw;
     width:calc(475px + 2vmin);
     text-align: left;
-    margin: 2vmax;
+    /* margin: 2v   w; */
 }
 
 .Card-title{
@@ -63,6 +63,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 1vw;
 }
 
 .Card-leftbuttons {
@@ -83,7 +84,7 @@
     height:calc(25px + 2vmin);
     cursor: pointer;
     transition: 0.3s;
-    padding: 0 1vmin;
+    padding: 0 2vw;
 }
 
 .Card-showdetails:hover{

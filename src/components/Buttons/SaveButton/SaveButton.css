@@ -15,9 +15,9 @@
 
 .SaveButton:hover {
     -webkit-animation: none;
-    -webkit-transform: scale(1.2);
+    -webkit-transform: scale(1.1);
     animation: none;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .SaveButton-image {
