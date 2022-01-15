@@ -16,9 +16,9 @@ function LikeButton({cardData}) {
         : localStorage.setItem(cardData.date, "liked");
     }
     return (
-        <div className="LikeButton" onClick={handleLikeButton} role="button">
-            <img src={!liked ? unlikedIcon : likedIcon}  className="LikeButton-image" alt="like/unlike icon"/>
-        </div>
+        <button className="LikeButton" onClick={handleLikeButton} aria-label="Like/Unlike">
+            <img src={!liked ? unlikedIcon : likedIcon}  className="LikeButton-image" alt="Like/Unlike icon"/>
+        </button>
     );
 }
 

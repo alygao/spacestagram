@@ -1,6 +1,7 @@
 .SaveButton {
     transition: 0.3s;
     background-color: white;
+    border: 2px solid white;
     border-radius: 10px;
     width:calc(25px + 2vmin);
     height:calc(25px + 2vmin);
@@ -14,10 +15,8 @@
 }
 
 .SaveButton:hover {
-    -webkit-animation: none;
-    -webkit-transform: scale(1.1);
-    animation: none;
-    transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .SaveButton-image {
