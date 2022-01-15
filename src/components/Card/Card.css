@@ -9,8 +9,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3vmin;
-    padding:3vmin;
+    margin: 5vw;
+    padding:2vw;
 }
 
 .Card:hover {
@@ -28,6 +28,7 @@
     border: 2px solid white;
     border-radius: 10px;
     object-fit: cover;
+    margin:1rem;
 }
 
 .Card-info {
