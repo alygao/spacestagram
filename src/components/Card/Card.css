@@ -91,13 +91,5 @@
 }
 
 .Card-showdetails:hover{
-    /* -webkit-animation: none;
-    -webkit-transform: scale(1.1);
-    animation: none;
-    transform: scale(1.1); */
     background-color: rgba(255, 255, 255, 0.116)
 }
-
-/* p {
-    margin-top: 0;
-} */
