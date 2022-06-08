@@ -4,10 +4,7 @@
 
 This is a single page application that retrieves the most recent 14 Astronomy Pictures of the Day (APOD) from the [NASA API](https://api.nasa.gov/) and showcases them like a social media feed.
 
-This is my submission for the Summer 2022 Shopify Front End Developer Intern Challenge: https://alyssa-gao-spacetagram.netlify.app/
-
 ## Basic Functions
-Please see [here](https://docs.google.com/document/d/13zXpyrC2yGxoLXKktxw2VJG2Jw8SdUfliLM-bYQLjqE/edit#) for the detailed requirements.
 - Fetch data from APOD (NASA’s API) and display the resulting images
 - Display descriptive data for each image (for example: title, date, description, etc.)
 - Like/Unlike an image
